@@ -10,12 +10,12 @@ router.post('/signin', UserController.signin);
 router.post('/findAllUser', UserController.findAllUser);
 router.post('/findOneUser', UserController.findOneUser);
 router.patch('/users/:userId', UserController.updateUser);
-router.post('/signin', UserController.deleteUser);
+router.post('/deleteUser', UserController.deleteUser);
 
 router.post('/createArticale',isAuthenticated, ArticaleController.createArticale);
 
 
-router.get('/fetch',isAuthenticated, ArticaleController.findAllArticales);
+router.get('/fetch/articles',isAuthenticated, ArticaleController.findAllArticales);
 
 
 router.get('/getOneArticale', isAuthenticated,ArticaleController.findOneArticale);
