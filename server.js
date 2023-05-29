@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(cookieParser()); 
 
 
-const port = process.env.PORT || 3000;
+const port =  3000;
 
 const Route = require("./routes");
 app.use("/api", Route);

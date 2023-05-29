@@ -2,7 +2,7 @@
 const UserModel = require('../models/UserModel');
 const bcrypt=require("bcrypt")
 const jwt=require("jsonwebtoken")
-const SECRET_KEY ="User_Project"
+const SECRET_KEY ="UserArticaleProject"
 const {successResponse, errorResponse} = require("../service/apiresponse")
  const signup = async (req, res) => {
     const {email,password,username}=req.body

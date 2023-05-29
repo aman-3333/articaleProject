@@ -1,6 +1,6 @@
 const userModel = require('../models/UserModel');
 const jwt = require('jsonwebtoken');
-const SECRET_KEY = "User_Project"
+const SECRET_KEY = "UserArticaleProject"
 const isAuthenticated = async (req,res,next)=>{
     try {
         const token = req.headers.authorization;
